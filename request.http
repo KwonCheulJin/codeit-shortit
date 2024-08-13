@@ -1,0 +1,49 @@
+GET http://localhost:3000/api/short-links
+###
+POST http://localhost:3000/api/short-links
+Content-Type: application/json
+
+{
+  "title": "codeit",
+  "url": "https://codeit.kr"
+}
+###
+PATCH http://localhost:3000/api/short-links/66baf26c2faa4cbba68ae478
+Content-Type: application/json
+
+{
+  "title": "codeit-edit"
+}
+###
+DELETE  http://localhost:3000/api/short-links/66baf26c2faa4cbba68ae478
+
+###
+PATCH http://localhost:3000/api/short-links
+
+###
+GET http://localhost:3000/api/qrcodes
+###
+POST  http://localhost:3000/api/qrcodes
+Content-Type: application/json
+
+{
+  "title": "codeit-test",
+  "url": "https://codeit.kr"
+}
+###
+GET http://localhost:3000/api/qrcodes/66baf4442faa4cbba68ae482
+###
+PATCH  http://localhost:3000/api/qrcodes/66baf4442faa4cbba68ae482
+Content-Type: application/json
+
+{
+  "title": "코드잇 커뮤니티!"
+}
+###
+DELETE  http://localhost:3000/api/qrcodes/66baf4442faa4cbba68ae482
+
+###
+POST  http://localhost:3000/api/qrcodes
+Content-Type: application/json
+
+{ "title": "코드잇 커뮤니티", "url": "https://www.codeit.kr/community/general" }
